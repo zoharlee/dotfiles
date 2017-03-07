@@ -1,0 +1,64 @@
+------------------------------------------------------------
+/usr/bin/pip run on Sun Mar  5 00:02:23 2017
+Getting page https://pypi.douban.com/simple/dask/
+Could not fetch URL https://pypi.douban.com/simple/dask/: connection error: hostname 'pypi.doubanio.com' doesn't match '*.ucdl.pp.uc.cn'
+Will skip URL https://pypi.douban.com/simple/dask/ when looking for download links for dask in /usr/local/lib/python2.7/dist-packages
+Getting page https://pypi.douban.com/simple/
+Could not fetch URL https://pypi.douban.com/simple/: connection error: hostname 'pypi.doubanio.com' doesn't match '*.ucdl.pp.uc.cn'
+Will skip URL https://pypi.douban.com/simple/ when looking for download links for dask in /usr/local/lib/python2.7/dist-packages
+Cannot fetch index base URL https://pypi.douban.com/simple/
+URLs to search for versions for dask in /usr/local/lib/python2.7/dist-packages:
+* https://pypi.douban.com/simple/dask/
+Getting page https://pypi.douban.com/simple/dask/
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_zohar...
+Operation cancelled by user
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1097, in prepare_files
+    req_to_install, self.upgrade)
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 252, in find_requirement
+    for page in self._get_pages(locations, req):
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 387, in _get_pages
+    page = self._get_page(location, req)
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 568, in _get_page
+    session=self.session,
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 670, in get_page
+    resp = session.get(url, headers={"Accept": "text/html"})
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/sessions.py", line 467, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 237, in request
+    return super(PipSession, self).request(method, url, *args, **kwargs)
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/sessions.py", line 455, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/sessions.py", line 578, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/sessions.py", line 178, in resolve_redirects
+    allow_redirects=False,
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/sessions.py", line 558, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/share/python-wheels/requests-2.2.1-py2.py3-none-any.whl/requests/adapters.py", line 330, in send
+    timeout=timeout
+  File "/usr/share/python-wheels/urllib3-1.7.1-py2.py3-none-any.whl/urllib3/connectionpool.py", line 562, in urlopen
+    body=body, headers=headers)
+  File "/usr/share/python-wheels/urllib3-1.7.1-py2.py3-none-any.whl/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1051, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 1013, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 864, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 826, in send
+    self.connect()
+  File "/usr/share/python-wheels/urllib3-1.7.1-py2.py3-none-any.whl/urllib3/connectionpool.py", line 111, in connect
+    timeout=self.timeout)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+KeyboardInterrupt
